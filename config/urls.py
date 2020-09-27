@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from sample_app.urls import router as drg_app_router
 
 urlpatterns = [
     path('', include('sample_app.urls')),
     path('admin/', admin.site.urls),
+    path('drg_api/', include(drg_app_router.urls)),
 ]
