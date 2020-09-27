@@ -1,0 +1,1 @@
+from sample_app.serializers.memo_serializer import MemoSerializer
