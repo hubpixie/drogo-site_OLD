@@ -1,3 +1,1 @@
-from django.db import models
-
-# Create your models here.
+from sample_app.models.memo import Memo
