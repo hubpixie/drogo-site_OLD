@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'rest_framework',
+    'rest_framework.authtoken',
     'drf_yasg',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -131,3 +132,5 @@ REST_FRAMEWORK = {
             'rest_framework.authentication.BasicAuthentication',
         ),
 }
+
+AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.AllowAllUsersModelBackend']
